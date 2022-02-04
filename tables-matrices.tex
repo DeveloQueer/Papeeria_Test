@@ -1,0 +1,57 @@
+%% %% this document is following ShareLaTeX Tutorial
+%% PT 6 - Tables and Matrices in LaTeX
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{fullpage}
+\usepackage{amsmath}
+
+
+
+\title{Adding a Bibliography}
+\author{Alex Gostosa}
+\date{\today}
+
+\begin{document}
+
+\section{Tables}
+
+% h t b p and ! for positions
+\begin{table}[h]
+% l - left justified c - center justified ; r - right justified - p{xcm} gives x cm of width to column
+\begin{tabular}{l | c | c | c | c | p{5cm}}
+
+    Competitor & Run & Cicle & Swim & Total & Additional Comments\\
+    \hline \hline
+    John T & 13:04 & 24:15 & 18:34 & 55:53 & loser\\
+    Mark T & 13:04 & 24:15 & 18:34 & 55:53 & dsjfnsdkjfn efdaninjgrrengipadngupnrgd angfnjgfsdfrengapadngrpnrgagkjfnudanirengfpa dngtpnrgagnis\\
+    Johnath T & 13:04 & 24:15 & 18:34 & 55:53 & winner\\
+         
+\end{tabular}
+\caption{Triathlon}
+\label{tab:tri}
+\end{table}
+
+
+\section{Matrices}
+
+Here's a Matrix!
+\[
+\begin{matrix}
+1 & 2 & 3\\
+4 & 5 & 6\\
+7 & 8 & 9
+\end{matrix}
+\]
+
+Here's another Matrix!
+\[
+\begin{vmatrix}
+1 & 2 & 3\\
+4 & 5 & 6\\
+7 & 8 & 9
+\end{vmatrix}
+\]
+
+
+\end{document}

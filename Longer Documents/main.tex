@@ -1,0 +1,28 @@
+%% Share LaTeX Tutorials
+%% pt 7 - Longer Documents
+
+% book or report allow you to use chapters, which is not abailable in article
+
+% this document is the main file, and for each chapter there is a new tex file
+
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum}
+
+\title{my Report}
+\author{hot shit}
+\date{\today}
+
+\begin{document}
+    
+    \maketitle
+    
+    \tableofcontents
+    
+    
+    \input{chapter01}
+    \input{chapter02}
+    
+    
+     
+\end{document}
